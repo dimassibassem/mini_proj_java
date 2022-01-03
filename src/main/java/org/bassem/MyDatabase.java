@@ -41,7 +41,7 @@ public class MyDatabase {
         return conn;
     }
 
-    public int ajouter(Personne p) throws SQLException {
+    public void ajouter(Personne p) throws SQLException {
         var instance = MyDatabase.getInstance();
         var conn = instance.getConnection();
 
@@ -63,7 +63,7 @@ public class MyDatabase {
 
 
         var statement = conn.prepareStatement(stm);
-        return statement.executeUpdate();
+        statement.executeUpdate();
     }
 
     public void remplirTableau(DefaultTableModel model) throws SQLException {

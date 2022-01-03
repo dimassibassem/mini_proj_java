@@ -37,14 +37,14 @@ public class MyListe extends JFrame {
             JScrollPane pane = new JScrollPane(table);
             JFrame f = new JFrame("Examen");
             JPanel panel = new JPanel(new GridLayout(2, 1));
-            JPanel graphP = new JPanel (new FlowLayout());
+            JPanel graphP = new JPanel(new FlowLayout());
             graphP.setBackground(Color.BLACK);
             panel.add(pane);
             f.add(panel);
             panel.add(graphP);
             pane.setBorder(BorderFactory.createTitledBorder("Liste des utilisateurs"));
             f.setSize(800, 700);
-            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            f.setLocation(0,0);
             f.setVisible(true);
 
             graph = (Graphics2D) graphP.getGraphics();
