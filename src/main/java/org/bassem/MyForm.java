@@ -1,6 +1,5 @@
 package org.bassem;
 
-import org.w3c.dom.css.Rect;
 
 import javax.swing.*;
 import java.awt.*;
@@ -45,7 +44,7 @@ public class MyForm extends JFrame {
         Pform.add(POption);
         setVisible(true);
 
-        JPanel pbtn = new JPanel(new FlowLayout());
+        JPanel pbtn = new JPanel(new FlowLayout(FlowLayout.TRAILING));
 
         pbtn.add(ajouter);
         pbtn.add(liste);
